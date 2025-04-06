@@ -29,7 +29,7 @@ export default function AdminLogin() {
 
     try {
       const response = await axios.post(
-        "https://hire-hub-liard.vercel.app/api/auth/v1/loginadmin",
+        "https://hirehub-q5c4.onrender.com/api/auth/v1/loginadmin",
         formData
       );
 
