@@ -29,7 +29,7 @@ export default function AdminLogin() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/v1/loginadmin",
+        "https://hire-hub-liard.vercel.app/api/auth/v1/loginadmin",
         formData
       );
 
