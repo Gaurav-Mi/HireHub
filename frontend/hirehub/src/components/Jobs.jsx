@@ -23,7 +23,7 @@ const Jobs = () => {
     const fetchJobs = async () => {
       try {
         const response = await axios.get(
-          "https://hire-hub-liard.vercel.app/api/jobs/v1/listalljobs"
+          "https://hirehub-q5c4.onrender.com/api/jobs/v1/listalljobs"
         );
         const allJobs = response.data;
         dispatch(getJobs(allJobs));
@@ -48,7 +48,7 @@ const Jobs = () => {
   const applyJob = async (jobId) => {
     try {
       const response = await axios.post(
-        `https://hire-hub-liard.vercel.app/api/jobs/v1/applyjob/${jobId}`,
+        `https://hirehub-q5c4.onrender.com/api/jobs/v1/applyjob/${jobId}`,
         {},
         {
           headers: {
