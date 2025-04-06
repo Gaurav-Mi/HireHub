@@ -25,7 +25,7 @@ const JobSeekerDashboard = () => {
     const fetchJobs = async () => {
       try {
         const response = await axios.get(
-          "https://hire-hub-liard.vercel.app/api/jobs/v1/listalljobs"
+          "https://hirehub-q5c4.onrender.com/api/jobs/v1/listalljobs"
         );
         const allJobs = response.data;
 
