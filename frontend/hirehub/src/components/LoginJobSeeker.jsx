@@ -31,7 +31,7 @@ export default function LoginJobSeeker() {
 
     try {
       const response = await axios.post(
-        "https://hire-hub-liard.vercel.app/api/auth/v1/login",
+        "https://hirehub-q5c4.onrender.com/api/auth/v1/login",
         formData
       );
 
