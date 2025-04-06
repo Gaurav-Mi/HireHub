@@ -23,7 +23,7 @@ export default function AdminDashboard() {
   const fetchJobs = async () => {
     try {
       const response = await axios.get(
-        "https://hire-hub-liard.vercel.app/api/jobs/v1/listalljobs",
+        "https://hirehub-q5c4.onrender.com/api/jobs/v1/listalljobs",
         {
           headers: {
             "auth-token": token,
@@ -39,7 +39,7 @@ export default function AdminDashboard() {
   const fetchUsers = async () => {
     try {
       const response = await axios.get(
-        "https://hire-hub-liard.vercel.app/api/auth/v1/getalluser",
+        "https://hirehub-q5c4.onrender.com/api/auth/v1/getalluser",
         {
           headers: {
             "auth-token": token,
@@ -55,7 +55,7 @@ export default function AdminDashboard() {
   const handleDeleteJob = async (jobId) => {
     try {
       await axios.delete(
-        `https://hire-hub-liard.vercel.app/api/jobs/v1/deletejob/${jobId}`,
+        `https://hirehub-q5c4.onrender.com/api/jobs/v1/deletejob/${jobId}`,
         {
           headers: {
             "auth-token": token,
@@ -71,7 +71,7 @@ export default function AdminDashboard() {
   const handleBlockUser = async (userId) => {
     try {
       await axios.put(
-        `https://hire-hub-liard.vercel.app/api/auth/v1/blockuser/${userId}`,
+        `https://hirehub-q5c4.onrender.com/api/auth/v1/blockuser/${userId}`,
         {},
         {
           headers: {
