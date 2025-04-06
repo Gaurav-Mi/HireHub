@@ -20,7 +20,7 @@ export default function Signup() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/v1/signup",
+        "https://hire-hub-liard.vercel.app/api/auth/v1/signup",
         formData
       );
       if (response.data.success) {
