@@ -17,7 +17,7 @@ function Companies() {
     const fetchCompanies = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/jobs/v1/listalljobs",
+          "https://hire-hub-liard.vercel.app/api/jobs/v1/listalljobs",
           {
             method: "GET",
             headers: {
