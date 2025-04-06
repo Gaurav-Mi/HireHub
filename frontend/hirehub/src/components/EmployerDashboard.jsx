@@ -44,7 +44,7 @@ const EmployerDashboard = () => {
 
     try {
       const response = await axios.post(
-        "https://hire-hub-liard.vercel.app/api/jobs/v1/createjob",
+        "https://hirehub-q5c4.onrender.com/api/jobs/v1/createjob",
         formData,
         {
           headers: {
