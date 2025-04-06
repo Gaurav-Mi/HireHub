@@ -20,7 +20,7 @@ const EmployerJobs = ({ refreshTrigger }) => {
     const fetchEmployerJobs = async () => {
       try {
         const response = await axios.get(
-          "https://hire-hub-liard.vercel.app/api/jobs/v1/employerjobs",
+          "https://hirehub-q5c4.onrender.com/api/jobs/v1/employerjobs",
           {
             headers: {
               "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const EmployerJobs = ({ refreshTrigger }) => {
   const deleteJob = async (jobId) => {
     try {
       await axios.delete(
-        `https://hire-hub-liard.vercel.app/api/jobs/v1/deletejob/${jobId}`,
+        `https://hirehub-q5c4.onrender.com/api/jobs/v1/deletejob/${jobId}`,
         {
           headers: {
             "auth-token": localStorage.getItem("auth-token"),
@@ -49,7 +49,7 @@ const EmployerJobs = ({ refreshTrigger }) => {
       );
       // Refresh jobs after deletion
       const response = await axios.get(
-        "https://hire-hub-liard.vercel.app/api/jobs/v1/employerjobs",
+        "https://hirehub-q5c4.onrender.com/api/jobs/v1/employerjobs",
         {
           headers: {
             "Content-Type": "application/json",
@@ -92,7 +92,7 @@ const EmployerJobs = ({ refreshTrigger }) => {
   const saveJob = async (jobId) => {
     try {
       await axios.put(
-        `https://hire-hub-liard.vercel.app/api/jobs/v1/updatejob/${jobId}`,
+        `https://hirehub-q5c4.onrender.com/api/jobs/v1/updatejob/${jobId}`,
         formData,
         {
           headers: {
@@ -105,7 +105,7 @@ const EmployerJobs = ({ refreshTrigger }) => {
 
       // Refresh jobs after saving
       const response = await axios.get(
-        "https://hire-hub-liard.vercel.app/api/jobs/v1/employerjobs",
+        "https://hirehub-q5c4.onrender.com/api/jobs/v1/employerjobs",
         {
           headers: {
             "Content-Type": "application/json",
@@ -122,7 +122,7 @@ const EmployerJobs = ({ refreshTrigger }) => {
   const handleStatusUpdate = async (jobId, userId, status) => {
     try {
       await axios.put(
-        `https://hire-hub-liard.vercel.app/api/jobs/v1/updatejobstatus/${jobId}/${userId}`,
+        `https://hirehub-q5c4.onrender.com/api/jobs/v1/updatejobstatus/${jobId}/${userId}`,
         { status },
         {
           headers: {
@@ -134,7 +134,7 @@ const EmployerJobs = ({ refreshTrigger }) => {
 
       // Refresh jobs after status update
       const response = await axios.get(
-        "https://hire-hub-liard.vercel.app/api/jobs/v1/employerjobs",
+        "https://hirehub-q5c4.onrender.com/api/jobs/v1/employerjobs",
         {
           headers: {
             "Content-Type": "application/json",
