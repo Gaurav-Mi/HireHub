@@ -18,7 +18,7 @@ export default function Homepage() {
         <img
           alt="HireHub"
           src="https://www.svgrepo.com/show/467051/heading-square-2.svg"
-          className="mx-auto h-20 w-20"
+          className="mx-auto h-20 w-20 pt-2"
         />
         <h1 className="mt-4 text-4xl font-bold text-white">
           Welcome to HireHub
