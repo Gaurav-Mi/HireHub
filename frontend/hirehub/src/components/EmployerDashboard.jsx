@@ -77,9 +77,10 @@ const EmployerDashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 pt-24 px-4 flex flex-col items-center">
-      <div className="w-full max-w-6xl flex flex-col lg:flex-row justify-between gap-6">
-        <div className="w-full lg:w-1/2 bg-white p-8 shadow-lg rounded-lg">
+    <div className="min-h-screen bg-gray-100 pt-24 px-4 sm:px-6 flex flex-col items-center">
+      <div className="w-full max-w-7xl flex flex-col lg:flex-row gap-8">
+     
+        <div className="w-full lg:w-1/2 bg-white p-6 sm:p-8 shadow-lg rounded-lg">
           <h2 className="text-2xl font-bold text-center mb-6">
             Post a New Job
           </h2>
@@ -131,6 +132,7 @@ const EmployerDashboard = () => {
             </button>
           </form>
         </div>
+
 
         <div className="w-full lg:w-1/2">
           <EmployerJobs refreshTrigger={refreshJobs} />
